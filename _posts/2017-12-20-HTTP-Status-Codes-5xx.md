@@ -4,22 +4,22 @@ title: HTTP Status Codes - 5xx
 ---
 What is the 5xx of HTTP Status Codes?
 
-HTTP Status
----
+## HTTP Status
+
+-------------
 HTTP Status Code는 HTTP 상태코드로서 클라이언트가 서버에게 요청 메시지를 보냈을 때 무슨 일이 일어났는지를 말해준다.
 상태 코드는 각 응답 메시지의 시작줄에 담겨 반환되는데 200에서 299까지의 상태 코드는 성공을, 300에서 399까지의 상태 코드는 리소스가 옮겨졌음을(redirection), 
 400에서 499까지의 상태코드는 클라이언트가 뭔가 잘못된 요청했음을 의미하고 500에서 599까지의 코드는 서버에서 뭔가 실패했음을 의미한다.
 
-이렇게 HTTP 상태코드에 대해 잘숙지하고 있다면 서버로부터 예상치못한 응답이 오더라도 적절한 대응을 할 수 있다.
+## 5xx ERRORS
 
-5xx ERRORS
----
+-------------
 클라이언트가 올바른 요청을 보냈음에도 서버 자체에서 에러가 발생하는 경우가 있는데 클라이언트가 서버의 제한에 걸린 것일 수도 있고 혹은 게이트웨이 리소스와 같은 서버의 보조 구성요소에서 발생한 에러일 수도 있다.
 
 
-아래는 일반적인 서버의 구성을 나타내는 그림으로 5xx 에러가 어디서 나타나는지 확인할 때 참고하도록 하자 
+아래는 일반적인 서버의 구성을 나타내는 그림으로 5xx 에러의 이해를 돕기위해 첨부하였다.
 
-![server architecture]("http://xoxoms.github.io/images/architecture.png")
+![server architecture](http://xoxoms.github.io/images/architecture.png)
 
 ### 500 Internal Server Error
 The server encountered an unexpected condition that prevented it from fulfilling the request.
@@ -53,6 +53,13 @@ The server, while acting as a gateway or proxy, did not receive a timely respons
 
 ---
 
+## 정리
+
+---
+
+HTTP Status는 HTTP 요청의 정보를 갖고있기 때문에 
+
+---
 참고자료: 
 
 [HTTP 완벽가이드](http://kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966261208)
