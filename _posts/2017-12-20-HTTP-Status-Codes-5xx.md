@@ -16,7 +16,6 @@ HTTP Status Code는 HTTP 상태코드로서 클라이언트가 서버에게 요�
 -------------
 클라이언트가 올바른 요청을 보냈음에도 서버 자체에서 에러가 발생하는 경우가 있는데 클라이언트가 서버의 제한에 걸린 것일 수도 있고 혹은 게이트웨이 리소스와 같은 서버의 보조 구성요소에서 발생한 에러일 수도 있다.
 
-
 아래는 일반적인 서버의 구성을 나타내는 그림으로 5xx 에러의 이해를 돕기위해 첨부하였다.
 
 ![server architecture](http://xoxoms.github.io/images/architecture.png)
@@ -51,16 +50,17 @@ The server, while acting as a gateway or proxy, did not receive a timely respons
 게이트웨이나 프록시의 역할을 수행하는 서버가 upstream 서버로 부터 적절한 시간내에 응답을 받지 못하여 요청을 완료할 수 없을 때 발생.
 
 
----
-
 ## 정리
 
 ---
 
-HTTP Status는 HTTP 요청의 정보를 갖고있기 때문에 
+누군가가 만들어 놓은 API를 사용할 때 예상하지 못한 응답을 받는 경우가 있는데 
+HTTP Status Code를 잘 숙지하고 있다면 에러의 발생 위치와 원인을 대략적으로 알수있기 때문에 비정상 응답에 어떤 조치를 취해야할지 판단하기 용이하고 
+이는 개발자 상호간의 커뮤니케이션과 개발 생산성에 큰 영향을 끼치므로 반드시 알고 넘어가야하는 내용이라고 생각한다. 
+
+## 참고자료
 
 ---
-참고자료: 
 
 [HTTP 완벽가이드](http://kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966261208)
 
