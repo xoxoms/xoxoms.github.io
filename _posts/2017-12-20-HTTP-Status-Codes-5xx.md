@@ -2,4 +2,5 @@
 layout: post
 title: HTTP Status Codes - 5xx
 ---
-## HTTP Status?
+What is the 5xx of HTTP Status Codes?
+
