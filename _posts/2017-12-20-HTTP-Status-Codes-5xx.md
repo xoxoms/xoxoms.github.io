@@ -64,6 +64,6 @@ The server, while acting as a gateway or proxy, did not receive a timely respons
 
 ---
 
-[HTTP 완벽가이드](http://kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966261208)
+HTTP 완벽가이드
 
 [https://httpstatuses.com](https://httpstatuses.com)
