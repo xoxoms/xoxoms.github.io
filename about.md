@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[sdtfqa123@gmail.com](mailto:sdtfqa123@gmail.com)
+[email@domain.com](mailto:email@domain.com)
