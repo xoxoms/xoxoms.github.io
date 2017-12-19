@@ -37,7 +37,7 @@ The server does not support the functionality required to fulfill the request.
 
 The server, while acting as a gateway or proxy, received an invalid response from an inbound server it accessed while attempting to fulfill the request.
 
-게이트웨이나 프록시의 역할을 수행하는 서버가 inbound 서버로 부터 유효하지 않은 응답을 받았을 때 발생. 
+게이트웨이나 프록시의 역할을 수행하는 서버가 inbound 서버에 접근을 시도 했지만 유효하지 않은 응답을 받았을 때 발생. 
 
 ### 503 Service Unavailable
 
