@@ -49,16 +49,14 @@ The server is currently unable to handle the request due to a temporary overload
 
 The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request.
 
-게이트웨이나 프록시의 역할을 수행하는 서버가 upstream 서버로 부터 적절한 시간내에 응답을 받지 못하여 요청을 완료할 수 없을 때 발생.
+게이트웨이나 프록시의 역할을 수행하는 서버가 upstream 서버에게 요청을 보냈지만 적절한 시간 내에 요청이 완료되지 못한 경우에 발생.
 
 
 ## 정리
 
 ---
-
-누군가가 만들어 놓은 API를 사용할 때 예상하지 못한 응답을 받는 경우가 있는데 
-HTTP Status Code를 잘 숙지하고 있다면 에러의 발생 위치와 원인을 대략적으로 알수있기 때문에 비정상 응답에 어떤 조치를 취해야할지 판단하기 용이하고 
-이는 개발자 상호간의 커뮤니케이션과 개발 생산성에 큰 영향을 끼치므로 반드시 알고 넘어가야하는 내용이라고 생각한다. 
+개발을 하다 보면 가끔 예상하지 못한 응답을 받아 난감한 경우가 있는데 HTTP Status Code를 이해하고 있다면 에러가 발생했을 때 
+원인을 파악하거나, 어떤 조치를 취해야할지 판단하기 용이하기 때문에 반드시 숙지해야할 내용이다.
 
 ## 참고자료
 
