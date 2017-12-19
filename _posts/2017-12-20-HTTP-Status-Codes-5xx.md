@@ -2,9 +2,9 @@
 layout: post
 title: HTTP Status Codes - 5xx
 ---
-## What is the 5xx of HTTP Status Codes?
+What is the 5xx of HTTP Status Codes?
 
-### HTTP Status
+## HTTP Status
 HTTP Status는 HTTP 프로토콜의 상태코드로서 클라이언트가 서버에게 요청 메시지를 보낼 때, 무슨 일이 일어났는지를 말해준다. 
 
 클라이언트가 올바른 요청을 보냈음에도 서버 자체에서 에러가 발생하는 경우가 있다.
