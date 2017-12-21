@@ -18,11 +18,11 @@ HTTP Status Code는 HTTP 상태코드로써 클라이언트가 서버에게 요�
 
 아래는 일반적인 서버의 구성을 나타내는 그림으로 5xx 에러의 이해를 돕기위해 첨부하였다.
 
-![server architecture](http://xoxoms.github.io/images/HTTP-status-Codes-5xx/architecture.png)
+![server architecture](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/architecture.png)
 
 ### 500 Internal Server Error
 
-![500](http://xoxoms.github.io/images/HTTP-status-Codes-5xx/500.png)
+![500](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/500.png)
 
 The server encountered an unexpected condition that prevented it from fulfilling the request.
 
@@ -30,7 +30,7 @@ The server encountered an unexpected condition that prevented it from fulfilling
 
 ### 501 Not Implemented
 
-![501](http://xoxoms.github.io/images/HTTP-status-Codes-5xx/501.png)
+![501](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/501.png)
 
 The server does not support the functionality required to fulfill the request.
 
@@ -38,7 +38,7 @@ The server does not support the functionality required to fulfill the request.
 
 ### 502 Bad Gateway
 
-![502](http://xoxoms.github.io/images/HTTP-status-Codes-5xx/502.png)
+![502](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/502.png)
 
 The server, while acting as a gateway or proxy, received an invalid response from an inbound server it accessed while attempting to fulfill the request.
 
@@ -46,7 +46,7 @@ The server, while acting as a gateway or proxy, received an invalid response fro
 
 ### 503 Service Unavailable
 
-![503](http://xoxoms.github.io/images/HTTP-status-Codes-5xx/503.png)
+![503](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/503.png)
 
 The server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay.
 
@@ -54,7 +54,7 @@ The server is currently unable to handle the request due to a temporary overload
 
 ### 504 Gateway Timeout
 
-![504](http://xoxoms.github.io/images/HTTP-status-Codes-5xx/504.png)
+![504](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/504.png)
 
 The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request.
 
