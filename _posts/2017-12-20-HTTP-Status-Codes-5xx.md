@@ -25,44 +25,43 @@ HTTP Status Code는 HTTP 상태코드로써 2XX 부터 5XX 까지로 구성되�
 
 ### 500 Internal Server Error
 
-![500](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/500.png)
-
 The server encountered an unexpected condition that prevented it from fulfilling the request.
 
 서버가 요청을 처리하는 도중 예상치 못한 에러가 발생하는 경우.
 
-### 501 Not Implemented
+![500](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/500.png)
 
-![501](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/501.png)
+### 501 Not Implemented
 
 The server does not support the functionality required to fulfill the request.
 
 서버가 요청사항을 수행하는 데 필요한 기능을 지원하지 않을 때 발생
 
-### 502 Bad Gateway
+![501](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/501.png)
 
-![502](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/502.png)
+### 502 Bad Gateway
 
 The server, while acting as a gateway or proxy, received an invalid response from an inbound server it accessed while attempting to fulfill the request.
 
-게이트웨이나 프록시의 역할을 수행하는 서버가 inbound 서버로 부터 유효하지 않은 응답을 받았을 때 발생. 
+게이트웨이나 프록시의 역할을 수행하는 서버가 inbound 서버로 부터 유효하지 않은 응답을 받았을 때 발생.
+
+![502](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/502.png) 
 
 ### 503 Service Unavailable
 
-![503](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/503.png)
-
 The server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay.
 
-서버의 트래픽이 갑자기 증가하거나 유지관리를 위해 다운되어 요청을 처리하지 못할 때 발생. 일시적인 장애로 시간이 지나면 정상으로 돌아옴을 의미한다. 
+서버의 트래픽이 갑자기 증가하거나 유지관리를 위해 다운되어 요청을 처리하지 못할 때 발생. 일시적인 장애로 시간이 지나면 정상으로 돌아옴을 의미한다.
+
+![503](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/503.png) 
 
 ### 504 Gateway Timeout
-
-![504](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/504.png)
 
 The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request.
 
 게이트웨이나 프록시의 역할을 수행하는 서버가 upstream 서버에게 요청을 보냈지만 적절한 시간 내에 요청이 완료되지 못한 경우에 발생.
 
+![504](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/504.png)
 
 ## HTTP Status Codes를 숙지한다면?
 
