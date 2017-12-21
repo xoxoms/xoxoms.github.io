@@ -4,7 +4,7 @@ title: HTTP Status Codes - 5xx
 ---
 What is the 5xx of HTTP Status Codes?
 
-## HTTP Status
+## HTTP Status Code
 
 -------------
 HTTP Status Code는 HTTP 상태코드로써 응답 메시지의 시작줄에 담겨 반환되는데 클라이언트가 서버에게 요청을 보냈을 때 무슨 일이 일어났는지를 말해준다.
