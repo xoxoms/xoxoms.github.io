@@ -18,8 +18,6 @@ HTTP Status Code는 HTTP 상태코드로써 클라이언트가 서버에게 요�
 
 아래는 일반적인 서버의 구성을 나타내는 그림으로 5xx 에러의 이해를 돕기위해 첨부하였다.
 
-5xx 에러 설명에 등장하는 Gateway와 proxy는 Web Server로 inbound server와 upstream server는 Web Application Server라고 생각하면 된다.
-
 ![server architecture](http://xoxoms.github.io/images/architecture.png)
 
 ### 500 Internal Server Error
