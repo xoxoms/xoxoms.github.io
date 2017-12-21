@@ -35,7 +35,7 @@ The server encountered an unexpected condition that prevented it from fulfilling
 
 The server does not support the functionality required to fulfill the request.
 
-서버가 요청사항을 수행하는 데 필요한 기능을 지원하지 않을 때 발생 예를들어 현재 서비스는 HTTP 1.0으로 서비스 되는데 HTTP 1.1에서 정의된 HTTP Method로 요청할 경우
+서버가 요청사항을 수행하는데 필요한 기능을 지원하지 않을 때 발생 예를들어 현재 서비스는 HTTP 1.0으로 서비스 되는데 HTTP 1.1에서 정의된 HTTP Method로 요청할 경우
 
 ![501](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/501.png)
 
