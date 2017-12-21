@@ -20,7 +20,7 @@ HTTP Status Code는 HTTP 상태코드로써 2XX 부터 5XX 까지로 구성되�
 ## 서버구조
 -------------
 
-![architecture](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/500.png)
+![architecture](http://xoxoms.github.io/images/HTTP-Status-Codes-5xx/architecture.png)
 
 ## 5xx ERRORS
 
