@@ -7,7 +7,7 @@ What is the 5xx of HTTP Status Codes?
 ## HTTP Status Code
 
 -------------
-HTTP Status Code는 HTTP 상태코드로써 2XX 부터 5XX 까지로 구현되어 있는데 클라이언트가 서버에게 요청을 보냈을 때 무슨 일이 일어났는지를 말해준다.
+HTTP Status Code는 HTTP 상태코드로써 2XX 부터 5XX 까지로 구성되는데 클라이언트가 서버에게 요청을 보냈을 때 무슨 일이 일어났는지를 말해준다.
 
 *2XX* - 요청이 정상적으로 완료되었음
 
