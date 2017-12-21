@@ -43,7 +43,7 @@ The server, while acting as a gateway or proxy, received an invalid response fro
 
 The server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay.
 
-서버의 트래픽이 갑자기 증가하거나 하여 요청을 처리하지 못할 때 발생. 일시적인 장애로 현재는 요청을 처리할 수 없는 상태이지만 시간이 지나면 정상으로 돌아옴을 의미한다. 
+서버의 트래픽이 갑자기 증가하거나 유지관리를 위해 다운되어 요청을 처리하지 못할 때 발생. 일시적인 장애로 시간이 지나면 정상으로 돌아옴을 의미한다. 
 
 ### 504 Gateway Timeout
 
