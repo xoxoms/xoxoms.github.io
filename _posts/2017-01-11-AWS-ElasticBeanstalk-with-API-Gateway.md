@@ -6,15 +6,15 @@ Elasticbeanstal + API Gateway 설정 기록
 
 -------------
 
-가자고는 제휴사에게 상품 정보를 제공해주는 Open API 서버를 운영하고 있는데 얼마전부터 504에러가 발생하고 있다.
+가자고는 제휴사에게 상품 정보를 제공해주는 Open API 서버를 운영하고 있는데 얼마전부터 504 에러가 발생하고 있다.
 
 서버는 아래 그림과 같이 구성되어있다.
 
 ![architecture](http://xoxoms.github.io/images/2/cloud.png)
 
-나는 504에러를 추적하기 위해 로그를 분석했지만 결과적으로 우리 endpint 내의 기능들은 모두 정상이었다. client는 60초동안 응답을 받지 못해 504 Gateway Timeout 응답 받았는데 우리 로그에는 길어도 10초 안에 모든 응답을 했던 것이다.
+나는 504 에러를 추적하기 위해 로그를 분석했지만 결과적으로 우리 endpint 내의 구성 요소들은 모두 정상이었다. 504 에러가 발생했을 때 elasticbeanstalk access log, apache access log, tomcat access log 등 모든 로그에는 요청을 정상처리한 기록이 남아있던 것이다.
 
-하여 public 하게 열려있는 classic loadbalancer가 아닌 network loadbalancer로 변경하고 외부에서의 연결을 차단하는 형태로 서버를 재구성하였는데 이 과정을 정리하기 위해 포스트를 남기게 되었다.
+점점 미궁속으로 빠져들어가는 와중에 classic loadbalancer는 패킷의 유실이 있을 수 있다는 이야기를 듣고 classic loadbalancer를 network loadbalancer로 변경 후 서버를 재구성했는데 이 과정을 정리하기 위해 포스트를 남기게 되었다.
    
 ### 1. 배포 파일 준비 
 AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 때문에 소스를 war로 패키징하여 준비한다. 만약 elasticbeanstalk의 loadbalancer의 타입이나 timezone 등의 초기설정을 바꾸려면 .ebextensions라는 directory를 만들고 거기에 설정 파일들을 넣은 후 .ebextensions directory와 war를 zip으로 압축한다. 
