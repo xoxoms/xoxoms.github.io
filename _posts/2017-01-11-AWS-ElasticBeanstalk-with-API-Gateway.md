@@ -17,6 +17,7 @@ Elasticbeanstal + API Gateway 설정 기록
 점점 미궁속으로 빠져들어가는 와중에 classic loadbalancer는 패킷의 유실이 있을 수 있다는 이야기를 듣고 classic loadbalancer를 network loadbalancer로 변경 후 서버를 재구성했는데 이 과정을 정리하기 위해 포스트를 남기게 되었다.
    
 ### 1. 배포 파일 준비 
+---
 AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 때문에 소스를 war로 패키징하여 준비한다. 만약 elasticbeanstalk의 loadbalancer의 타입이나 timezone 등의 초기설정을 바꾸려면 .ebextensions라는 directory를 만들고 거기에 설정 파일들을 넣은 후 .ebextensions directory와 war를 zip으로 압축한다. 
 
 자세한 내용은 아래 링크 참고
@@ -24,6 +25,7 @@ AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 때문�
 [https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/applications-sourcebundle.html](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/applications-sourcebundle.html)
 
 ### 2. elasticbeanstalk
+---
 #### 2.1. elasticbeanstalk appication 생성
 우측 상단 새 애플리케이션 생성을 누르고 애플리케이션 이름을 적절하게 넣어주면 elasticbeanstalk application이 생성된다.
 	
@@ -69,10 +71,8 @@ application 환경정보를 등록하고 원하는 플랫폼을 선택한 후 �
 ![upload](http://xoxoms.github.io/images/2/1.png)
 
 ### 3. API Gateway
-
+---
 API Gateway를 사용하면 클라이언트마다 고유의 API Key를 할당할 수 있는데 사용 제한량을 조절하여 더 많은 요청처리를 하게 하거나 제한하는 것이 가능하고 클라이언트 별 사용량과 Cloud Watch를 이용한 모니터링이 가능하도록 해준다. 
-
-또 API Gateway에 등록한 API외 요청에 대해서는 반려하도록 앞단에서 필터링 해주므로 유효하지 않은 요청이나 DDOS 공격에 대해 신경을 쓸 필요가 없게된다.
 
 #### 3.1. API 작성
 
