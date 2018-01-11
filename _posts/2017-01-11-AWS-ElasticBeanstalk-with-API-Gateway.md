@@ -8,7 +8,7 @@ Elasticbeanstal + API Gateway 설정 기록
 
 가자고는 제휴사에게 상품 정보를 제공해주는 Open API 서버를 운영하고 있는데 얼마전부터 504에러가 발생하고 있다.
 
-서버는 API Gateway -> Elasticbeanstalk{ Classic LoadBalancer -> EC2 ( apache -> tomcat ) } 처럼 구성되어있다.
+서버는 아래 그림과 같이 구성되어있다.
 
 ![architecture](http://xoxoms.github.io/images/2/cloud.png)
 
@@ -17,9 +17,11 @@ Elasticbeanstal + API Gateway 설정 기록
 하여 public 하게 열려있는 classic loadbalancer가 아닌 network loadbalancer로 변경하고 외부에서의 연결을 차단하는 형태로 서버를 재구성하였는데 이 과정을 정리하기 위해 포스트를 남기게 되었다.
    
 ### 1. 배포 파일 준비 
-AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 떄문에 소스를 war로 패키징하여 준비한다. 만약 elasticbeanstalk의 loadbalancer의 타입이나 timezone 등의 초기설정을 바꾸려면 .ebextensions라는 directory를 만들고 거기에 설정 파일들을 넣은 후 .ebextensions directory와 war를 zip으로 압축한다. 
+AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 때문에 소스를 war로 패키징하여 준비한다. 만약 elasticbeanstalk의 loadbalancer의 타입이나 timezone 등의 초기설정을 바꾸려면 .ebextensions라는 directory를 만들고 거기에 설정 파일들을 넣은 후 .ebextensions directory와 war를 zip으로 압축한다. 
 
-자세한 내용은 아래 링크 참고 https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/applications-sourcebundle.html
+자세한 내용은 아래 링크 참고
+ 
+[https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/applications-sourcebundle.html](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/applications-sourcebundle.html)
 
 ### 2. elasticbeanstalk
 #### 2.1. elasticbeanstalk appication 생성
