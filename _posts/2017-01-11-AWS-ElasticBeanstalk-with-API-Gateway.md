@@ -31,6 +31,7 @@ AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 때문�
 
 2.1에서 만든 application란에 있는 환경 생성 버튼을 누르면 환경 티어 선택 창이 나타나는데 웹 서버 환경을 선택해준다.
 application 환경정보를 등록하고 원하는 플랫폼을 선택한 후 애플리케이션 코드란에 0번에서 준비한 배포파일을 업로드 후 하단의 추가 옵션 구성을 선택한다. (추가 옵션 구성을 선택하지 않고 바로 환경생성 버튼을 누르면 모든 설정들이 default로 설정됨)
+![upload](http://xoxoms.github.io/images/2/0.png)
 
 #### 2.3 추가 옵션 구성
 로드 밸런서와 EC2 인스턴스의 옵션을 설정한다.
@@ -64,7 +65,8 @@ application 환경정보를 등록하고 원하는 플랫폼을 선택한 후 �
 * VPC와 인스턴스 서브넷, 권한그룹등을 설정한다.
 
 #### 2.4 elasticbeanstalk 생성 후
-환경이 생성되는데는 시간이 조금 걸리는데 이 작업이 정상적으로 완료되면 AWS EC2 서비스의 loadbalancer와 EC2 인스턴스가 정상적으로 생성되었는지 확인해보자. applcation 환경의 플랫폼을 Tomcat으로 설정했다면 구성메뉴의 소프트웨어 구성에서 JVM 명령줄 옵션과 JVM 힙 크기 등을 설정할 수 있다. 
+환경이 생성되는데는 시간이 조금 걸리는데 이 작업이 정상적으로 완료되면 AWS EC2 서비스의 loadbalancer와 EC2 인스턴스가 정상적으로 생성되었는지 확인해보자. application 환경의 플랫폼을 Tomcat으로 설정했다면 구성메뉴의 소프트웨어 구성에서 JVM 명령줄 옵션과 JVM 힙 크기 등을 설정할 수 있다. 
+![upload](http://xoxoms.github.io/images/2/1.png)
 
 ### 3. API Gateway
 
@@ -82,7 +84,9 @@ API에서 제공하는 스펙을 모두 작성하고 아래 스텝으로 넘어�
 
 우리 서비스의 domain name을 등록할 수 있다. 도메인 이름을 등록하려면 ACM 인증서가 필요한데, Certification Manager에서 발급받을 수 있다. 
 
-참고로 API Gateway는 us-east-1(버지니아 북)에서 생성된 인증서만 사용가능하므로 인증서 발급시 region이 us-east-1인지 확인해야한다.
+참고로 API Gateway는 us-east-1(버지니아 북부)에서 생성된 인증서만 사용가능하므로 인증서 발급시 region이 us-east-1인지 확인해야한다.
 
 발급받은 인증서를 등록하고 3.1에서 작성한 API를 매핑해주면 대상 도메인 이름이 발급되는데 이 값을 Route 53에 등록하면 domain name으로 API 호출이 가능해진다.
+
+![upload](http://xoxoms.github.io/images/2/2.png)
  
