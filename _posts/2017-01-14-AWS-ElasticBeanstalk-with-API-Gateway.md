@@ -32,7 +32,8 @@ AWS elasticbeanstalk는 war나 zip 두가지만 업로드할 수 있기 때문�
 #### 2.2 application 환경 생성 (실제 loadbalancer와 EC2 인스턴스 환경 생성)
 
 2.1에서 만든 application란에 있는 환경 생성 버튼을 누르면 환경 티어 선택 창이 나타나는데 웹 서버 환경을 선택해준다.
-application 환경정보를 등록하고 원하는 플랫폼을 선택한 후 애플리케이션 코드란에 0번에서 준비한 배포파일을 업로드 후 하단의 추가 옵션 구성을 선택한다. (추가 옵션 구성을 선택하지 않고 바로 환경생성 버튼을 누르면 모든 설정들이 default로 설정됨)
+application 환경정보를 등록하고 원하는 플랫폼을 선택한 후 0번에서 준비한 배포파일을 업로드한다.
+
 ![upload](http://xoxoms.github.io/images/2/0.png)
 
 #### 2.3 추가 옵션 구성
@@ -86,7 +87,7 @@ API에서 제공하는 스펙을 모두 작성하고 아래 스텝으로 넘어�
 
 참고로 API Gateway는 us-east-1(버지니아 북부)에서 생성된 인증서만 사용가능하므로 인증서 발급시 region이 us-east-1인지 확인해야한다.
 
-발급받은 인증서를 등록하고 3.1에서 작성한 API를 매핑해주면 대상 도메인 이름이 발급되는데 이 값을 Route 53에 등록하면 domain name으로 API 호출이 가능해진다.
+발급받은 인증서를 등록하고 3.1에서 작성한 API를 기본경로로 매핑해주면 대상 도메인 이름이 발급되는데 이 값을 Route 53에 등록하면 모든 설정이 완료된다.
 
 ![upload](http://xoxoms.github.io/images/2/2.png)
  
