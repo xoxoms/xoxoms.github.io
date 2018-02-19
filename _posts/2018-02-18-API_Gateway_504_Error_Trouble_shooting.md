@@ -20,5 +20,3 @@ Open API를 사용하고 있는 제휴사에서 상품 정보를 수집하는데
 ### 5. AWS Load balancer
 
 ### 6. NLB + VPC Link API Gateway
-
-### 7. 마무리
