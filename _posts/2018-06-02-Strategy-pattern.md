@@ -35,4 +35,5 @@ animal.makeSound();
             
 * 참고
 
+    Head First Design Patterns
     https://github.com/xoxoms/design-pattern/tree/master/src/strategy
